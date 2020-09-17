@@ -17,10 +17,10 @@ public class Test {
     @GetMapping("/test")
     @ResponseBody
     public String responseStr(){
-        this.helloworld.getStr();
+
         System.out.println("wozhixingle");
         String str = new String();
-        str = "wozhixingle";
+        str = this.helloworld.getStr();
         return str;
     }
 
